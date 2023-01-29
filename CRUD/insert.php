@@ -9,7 +9,7 @@ $con= mysqli_connect($server, $username, $password, $dbname);
 if(!$con){
     echo"not connected";
 }
-//start
+//starts
 
 $name = $_POST['name'];
 $email = $_POST['email'];
