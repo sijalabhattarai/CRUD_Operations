@@ -3,7 +3,6 @@ require_once "connect.php";
     
 if(isset($_GET['sno'])){
 
-    // prevent from mysql injection
     $sno = mysqli_real_escape_string($conn, $_GET['sno']);
     $name = mysqli_real_escape_string($conn, $_GET['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -18,8 +17,6 @@ if(isset($_GET['sno'])){
 
     }
 } else {
-    echo "No id found";
+    echo "Not found";
 }
-
-
 ?>
