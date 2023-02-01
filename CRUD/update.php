@@ -50,8 +50,8 @@
         if($result->num_rows > 0){
             foreach($result as $res):
 ?>
-    <div class='form'>
-        <form action='userupd.php?sno=<?php echo $res['sno'] ?>' method='post'>
+    <div >
+        <form action='userupd.php?sno=<?php echo $res['sno'] ?>' method='post' class='form'>
             <label for='name'>Name</label>
             <input type='text' name='name' id='name' value='<?php echo $res['name'] ?>' placeholder='Enter your name'>
             <label for='email'>Email</label>
